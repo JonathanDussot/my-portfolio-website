@@ -305,6 +305,10 @@ svg {
   filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
 }
 
+.home__img{
+  width: 900px;
+  transform: translateX(-40px);
+}
 
 /*=============== BUTTON ===============*/
 
