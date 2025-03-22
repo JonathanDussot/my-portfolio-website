@@ -226,7 +226,10 @@ svg {
 }
 
 /* Show menu */
-
+.show-menu{
+  right: 0;
+  
+}
 
 /* Add blur to header */
 
