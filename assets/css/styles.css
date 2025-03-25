@@ -94,7 +94,10 @@ button {
   border: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -128,7 +131,7 @@ svg {
   padding-block: 5rem 2rem;
 }
 
-.section__title, 
+.section__title,
 .section__subtitle {
   text-align: center;
   color: var(--title-color);
@@ -150,7 +153,8 @@ svg {
 }
 
 .main {
-  overflow: hidden; /* For animation ScrollReveal */
+  overflow: hidden;
+  /* For animation ScrollReveal */
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -170,17 +174,17 @@ svg {
   align-items: center;
 }
 
-.nav__logo{
+.nav__logo {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
 
-.nav__logo span{
+.nav__logo span {
   color: var(--first-color);
 }
 
 .nav__toggle,
-.nav__close{
+.nav__close {
   display: flex;
   font-size: 1.25rem;
   color: var(--title-color);
@@ -188,8 +192,8 @@ svg {
 }
 
 /* Navigation for mobile devices */
-@media screen and (max-width: 1023px){
-  .nav__menu{
+@media screen and (max-width: 1023px) {
+  .nav__menu {
     position: fixed;
     top: 0;
     right: -100%;
@@ -198,45 +202,46 @@ svg {
     height: 100%;
     padding: 4.5rem 0 0 3rem;
     backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(); /* For Safari */
+    -webkit-backdrop-filter: blur();
+    /* For Safari */
     transition: right .4s;
   }
 }
 
-.nav__list{
+.nav__list {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
 }
 
-.nav__link{
+.nav__link {
   color: var(--title-color);
   font-weight: var(--font-medium);
   transition: color 4s;
 }
 
-.nav__link:hover{
+.nav__link:hover {
   color: var(--first-color);
 }
 
-.nav__close{
+.nav__close {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
 }
 
 /* Show menu */
-.show-menu{
+.show-menu {
   right: 0;
 
 }
 
 /* Add blur to header */
-.blur-header{
+.blur-header {
   background-color: transparent;
 }
 
-.blur-header::after{
+.blur-header::after {
   content: '';
   position: absolute;
   width: 1000%;
@@ -253,50 +258,50 @@ svg {
 
 
 /*=============== HOME ===============*/
-.home{
+.home {
   background-color: var(--container-color);
 }
 
-.home__container{
+.home__container {
   padding-top: 2rem;
   row-gap: 2.5rem;
 }
 
-.home__content{
+.home__content {
   display: grid;
   row-gap: 2rem;
 }
 
-.home__data{
+.home__data {
   text-align: center;
 }
 
 .home__subtitle,
-.home__education{
+.home__education {
   font-size: var(--bigger-font-size);
 }
 
 .home__subtitle span,
-.home__title{
+.home__title {
   color: var(--first-color);
 }
 
-.home__title{
+.home__title {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-semi-bold);
 }
 
-.home__description{
+.home__description {
   margin-block: 1rem 1.5rem;
 }
 
-.home__social{
+.home__social {
   display: flex;
   justify-content: center;
   column-gap: 1.25rem;
 }
 
-.home__social-link{
+.home__social-link {
   display: flex;
   background-color: var(--first-color-alt);
   padding: .5rem;
@@ -306,27 +311,27 @@ svg {
   transition: transform .4s;
 }
 
-.home__social-link:hover{
+.home__social-link:hover {
   transform: translateY(-.25rem);
 }
 
-.home__image{
+.home__image {
   justify-self: center;
 }
 
-.home__blob{
+.home__blob {
   width: 320px;
   fill: var(--first-color);
   filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
 }
 
-.home__img{
+.home__img {
   width: 900px;
   transform: translateX(-130px);
 }
 
 /*=============== BUTTON ===============*/
-.button{
+.button {
   display: inline-block;
   background-color: var(--first-color);
   padding: 1rem 1.75rem;
@@ -336,87 +341,87 @@ svg {
   transition: box-shadow .4s;
 }
 
-.button:hover{
+.button:hover {
   box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
 }
 
 /*=============== ABOUT ===============*/
-.about__container{
+.about__container {
   row-gap: 2.5rem;
 }
 
-.about__data{
+.about__data {
   text-align: center;
 }
 
-.about__description{
+.about__description {
   margin-bottom: 2rem;
 }
 
-.about__image{
+.about__image {
   justify-self: center;
 }
 
-.about__blob{
+.about__blob {
   width: 320px;
 }
 
-.about__blob path{
+.about__blob path {
   stroke: var(--first-color);
 }
 
 
 /*=============== SKILLS ===============*/
-.skills{
+.skills {
   background-color: var(--container-color);
 }
 
-.skills__container{
+.skills__container {
   padding-bottom: 2rem;
   row-gap: 3.5rem;
 }
 
-.skills__data{
+.skills__data {
   text-align: center;
 }
 
-.skills__description{
+.skills__description {
   margin-bottom: 2rem;
 }
 
 .skills__content,
-.skills__group{
+.skills__group {
   display: grid;
 }
 
-.skills__content{
+.skills__content {
   grid-template-columns: repeat(2, max-content);
   column-gap: 4rem;
   justify-content: center;
   align-items: baseline;
 }
 
-.skills__group{
+.skills__group {
   row-gap: 1rem;
   list-style: decimal-leading-zero;
 }
 
-.skills__item{
+.skills__item {
   font-weight: var(--font-medium);
   color: var(--title-color);
 }
 
-.skills__item::marker{
+.skills__item::marker {
   color: var(--first-color);
 }
 
 /*=============== HIGHLIGHTS ===============*/
-.highlights__container{
+.highlights__container {
   row-gap: 2rem;
   padding-block: 1rem;
 }
 
-.highlights__card{
+.highlights__card {
   text-align: center;
   background-color: var(--container-color);
   padding: 3rem 1.25rem;
@@ -425,58 +430,58 @@ svg {
   transition: border .4s;
 }
 
-.highlights__icon{
+.highlights__icon {
   display: block;
   font-size: 4rem;
   color: var(--first-color);
   margin-bottom: .75rem;
 }
 
-.highlights__title{
+.highlights__title {
   font-size: var(--h2-font-size);
   margin-bottom: 1.5rem;
 }
 
-.highlights__card:hover{
+.highlights__card:hover {
   border: 2px solid var(--first-color);
 }
 
-.hackprojects__button{
+.hackprojects__button {
   justify-content: center;
   font-size: var(--font-medium);
   color: var(--first-color);
 }
 
 /*=============== PROJECTS ===============*/
-.projects{
+.projects {
   background-color: var(--container-color);
 }
 
-.projects__container{
+.projects__container {
   row-gap: 2rem;
   justify-content: center;
   padding-block: 1rem;
 }
 
-.projects__card{
+.projects__card {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
 }
 
-.projects__img{
+.projects__img {
   width: 100%;
   height: 100%;
 }
 
-.projects__modal{
+.projects__modal {
   position: absolute;
   left: 0;
   bottom: -100%;
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 0%,
-              hsla(var(--hue), 70%, 40%, .8) 50%);
+      hsla(var(--hue), 70%, 40%, .8) 50%);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(2px);
   border-radius: 1rem;
@@ -488,39 +493,81 @@ svg {
 }
 
 .projects__subtitle,
-.projects__button{
+.projects__button {
   color: var(--title-color);
   font-size: var(--small-font-size);
 }
 
-.projects__subtitle{
+.projects__subtitle {
   display: block;
   margin-bottom: .25rem;
 }
 
-.projects__title{
+.projects__title {
   font-size: var(--h2-font-size);
   margin-bottom: .75rem;
 }
 
 .projects__button,
-.hackprojects__button{
+.hackprojects__button {
   display: flex;
   align-items: center;
   column-gap: .5rem;
   font-weight: var(--font-medium);
 }
 
-.project__button i{
+.project__button i {
   font-size: 1.25rem;
 }
 
-.projects__card:hover .projects__modal{
+.projects__card:hover .projects__modal {
   bottom: 0;
 }
 
 /*=============== CONTACT ===============*/
+.contact__container {
+  padding-top: 1rem;
+}
 
+.contact__form,
+.contact__group {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact__form {
+  position: relative;
+}
+
+.contact__input {
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.contact__input::placeholder {
+  color: var(--text-color);
+}
+
+.contact__form textarea {
+  height: 11rem;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.contact__button {
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact__message {
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
 
 /*=============== FOOTER ===============*/
 
