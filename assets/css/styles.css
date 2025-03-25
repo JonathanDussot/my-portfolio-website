@@ -441,6 +441,12 @@ svg {
   border: 2px solid var(--first-color);
 }
 
+.hackprojects__button{
+  justify-content: center;
+  font-size: var(--font-medium);
+  color: var(--first-color);
+}
+
 /*=============== PROJECTS ===============*/
 .projects{
   background-color: var(--container-color);
@@ -497,7 +503,8 @@ svg {
   margin-bottom: .75rem;
 }
 
-.projects__button{
+.projects__button,
+.hackprojects__button{
   display: flex;
   align-items: center;
   column-gap: .5rem;
