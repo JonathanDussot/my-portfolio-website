@@ -40,6 +40,19 @@ const contactForm = document.getElementById('contact-form'),
 
 const sendEmail = (e) =>{
     e.preventDefault()
+
+    emailjs.sendForm('service_6jgegee', 'template_y6c0zsa', '#contact-form', 'Eg-vzmRsjTa8bPTIS')
+        .then(() =>{
+            contactMessage.textContent = 'Message sent successfully ✅'
+            
+            setTimeout(() =>{
+                contactMessage.textContent = ''
+            }, 5000)
+
+        }, () =>{
+            contactMessage.textContent = 'Message not sent (service error) ❌'
+            
+        })
 }
 
 contactForm.addEventListener('submit', sendEmail)
